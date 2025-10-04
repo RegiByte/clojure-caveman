@@ -1,0 +1,11 @@
+.env
+.DS_Store
+.portal/
+.cpcache/
+.idea/
+.vscode/
+.calva/
+.lsp/
+.clj-kondo/.cache/
+data
+.nrepl-port
