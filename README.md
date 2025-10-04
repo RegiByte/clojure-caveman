@@ -148,7 +148,7 @@ Each test gets an isolated database cloned from a template (fast!).
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo> caveman-project
+   git clone git@github.com:RegiByte/clojure-caveman.git caveman-project
    cd caveman-project
    ```
 
