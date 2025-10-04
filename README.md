@@ -214,8 +214,6 @@ just lint          # Run clj-kondo linter
 just outdated      # Check for outdated dependencies
 ```
 
-## Development Workflow
-
 ### Database Changes
 
 1. **Create migration**
@@ -379,7 +377,7 @@ Educational project - do whatever you want with it!
 ## Acknowledgments
 
 Built as a learning project to understand Clojure web development patterns. Thanks to the Clojure community for excellent libraries and documentation!
-But the special thanks go to [@mccue](https://github.com/mccue) for the amazing caveman tutorial!
+But the special thanks go to [@bowbahdoe](https://github.com/bowbahdoe) for the amazing caveman tutorial!
 
 ---
 
