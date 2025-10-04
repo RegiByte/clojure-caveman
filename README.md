@@ -183,20 +183,14 @@ Each test gets an isolated database cloned from a template (fast!).
 
 2. **Connect your editor** (Calva, Cursive, CIDER, Emacs, etc.)
 
-3. **Start Portal** (optional but recommended)
-   ```clojure
-   (require '[dev.portal :as portal])
-   (portal/start-portal!)
-   ```
-
-4. **Start the system**
+3. **Start the system**
    ```clojure
    (start-system!)
    ```
 
-5. **Visit** http://localhost:8080
+4. **Visit** http://localhost:8080
 
-6. **Make changes** and re-evaluate functions - no restart needed!
+5. **Make changes** and re-evaluate functions - no restart needed!
 
 #### Option 2: Command Line
 
@@ -221,28 +215,6 @@ just outdated      # Check for outdated dependencies
 ```
 
 ## Development Workflow
-
-### Typical Day of Development
-
-1. Start REPL: `just nrepl`
-2. Connect editor
-3. Start Portal: `(portal/start-portal!)`
-4. Start system: `(start-system!)`
-5. Make changes to code
-6. Re-evaluate changed functions in editor
-7. Test at REPL with `(tap> ...)` to inspect data
-8. For system-level changes: `(restart-system!)`
-9. Done: `(stop-system!)`
-
-### Adding a New Feature
-
-1. **Create route namespace** (e.g., `src/caveman/my_feature/routes.clj`)
-2. **Define routes function** that returns Reitit route data
-3. **Register in `caveman.routes/routes`**
-4. **Add background job handlers** in `src/caveman/my_feature/jobs.clj` (optional)
-5. **Register handlers** in `caveman.jobs/handlers` (optional)
-6. **Create database trigger** in migrations if needed (optional)
-7. **Re-evaluate** or `(restart-system!)`
 
 ### Database Changes
 
